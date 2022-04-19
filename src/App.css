@@ -1,6 +1,47 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
+}
+body{
+  background-color: #1e1e1e;
+  color:  #FFF;
+}
+.App {
   text-align: center;
+  
+}
+header{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  color: #FFF;
+  background-color: #145A32;
+  text-align: center;
+  justify-content: center;
+
+}
+header h1{
+  margin: auto 0px;
+}
+
+.App input{
+  margin:  8px 0px;
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.2em;
+  border: none;
+  border-bottom: 2px  rgba(255, 255, 255, 0.2);
+  border-radius: 8px 8px 0px 0px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+  transition: background-color ease-in 0.5s;
+}
+.App input:focus{
+   background-color: rgba(255, 255, 255, 0.05);
 }
 .animes-list{
   display: grid;
@@ -11,3 +52,4 @@
 .animes-list img{
   max-width: 100%;
 }
+

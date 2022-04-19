@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import InputSearch from "./InputSearch"
-import './App.css';
+import "./App.css"
 const api = 'https://kitsu.io/api/edge/'
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
   const [text, setText] = useState('')
    //inicializando state que será utilizada para receber os dados da API.
   const [info, setInfo] = useState({})
- 
  //Pesquisando dados correspondentes ao input na API a cada mudança no state de text
   useEffect(()=>{
     if(text){
@@ -23,27 +22,29 @@ function App() {
 
   return (
     <div className="App">
+      <header>
+        <h1>Search animes</h1>
+      </header>
 
-      <h1>Animes</h1>
-      {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}
-      <InputSearch value={text} onChange={(search)=> setText(search)}/>
+        {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}
+        <InputSearch  value={text} onChange={(search)=> setText(search)}/>
 
-      {/*Imporimindo mensagem de carregamento enquanto estiver sendo feita a leitura de dados na API*/}
-      {text && !info.data && (
-        <span>Carregando...</span>
-       )}
+        {/*Imporimindo mensagem de carregamento enquanto estiver sendo feita a leitura de dados na API*/}
+        {text && !info.data && (
+          <span>Carregando...</span>
+         )}
 
-      {/*listando dados correspondentes a pesquisa (caso exista algum valor sendo retornado pela API)*/}
-      {info.data && (
-        <ul className="animes-list">
-          {info.data.map((anime)=>(
-            <li key={anime.id}>
-              <img src={anime.attributes.posterImage.small} alt={anime.attributes.canonicalTitle}/>
-              {anime.attributes.canonicalTitle}
-            </li>
-            ))}
-        </ul>
-        )}
+        {/*listando dados correspondentes a pesquisa (caso exista algum valor sendo retornado pela API)*/}
+        {info.data && (
+          <ul className="animes-list">
+            {info.data.map((anime)=>(
+              <li key={anime.id}>
+                <img src={anime.attributes.posterImage.small} alt={anime.attributes.canonicalTitle}/>
+                {anime.attributes.canonicalTitle}
+              </li>
+              ))}
+          </ul>
+          )}
     </div>
   );
 }
