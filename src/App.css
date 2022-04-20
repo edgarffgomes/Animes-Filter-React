@@ -17,6 +17,7 @@ header{
   height: 100px;
   width: 100%;
   color: #FFF;
+  font-size:  2em;
   background-color: #145A32;
   text-align: center;
   justify-content: center;
@@ -24,6 +25,9 @@ header{
 }
 header h1{
   margin: auto 0px;
+}
+header h1 .icon{
+  bottom: 15px;
 }
 
 .App input{

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import InputSearch from "./InputSearch"
 import "./App.css"
+import { BiSearchAlt } from "react-icons/bi";
 const api = 'https://kitsu.io/api/edge/'
 
 function App() {
@@ -23,13 +24,13 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Search animes</h1>
+        <h1><BiSearchAlt className="icon" size={55}/> Search animes</h1>
       </header>
 
         {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}
         <InputSearch  value={text} onChange={(search)=> setText(search)}/>
 
-        {/*Imporimindo mensagem de carregamento enquanto estiver sendo feita a leitura de dados na API*/}
+        {/*Imprimindo mensagem de carregamento enquanto estiver sendo feita a leitura de dados na API*/}
         {text && !info.data && (
           <span>Carregando...</span>
          )}
