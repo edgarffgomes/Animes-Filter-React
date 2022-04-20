@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Animes-Filter-React/static/css/main.134fe511.css",
-    "main.js": "/Animes-Filter-React/static/js/main.057d9c27.js",
+    "main.css": "/Animes-Filter-React/static/css/main.ebeb6067.css",
+    "main.js": "/Animes-Filter-React/static/js/main.3bd789ab.js",
     "static/js/787.99f9a074.chunk.js": "/Animes-Filter-React/static/js/787.99f9a074.chunk.js",
     "index.html": "/Animes-Filter-React/index.html",
-    "main.134fe511.css.map": "/Animes-Filter-React/static/css/main.134fe511.css.map",
-    "main.057d9c27.js.map": "/Animes-Filter-React/static/js/main.057d9c27.js.map",
+    "main.ebeb6067.css.map": "/Animes-Filter-React/static/css/main.ebeb6067.css.map",
+    "main.3bd789ab.js.map": "/Animes-Filter-React/static/js/main.3bd789ab.js.map",
     "787.99f9a074.chunk.js.map": "/Animes-Filter-React/static/js/787.99f9a074.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.134fe511.css",
-    "static/js/main.057d9c27.js"
+    "static/css/main.ebeb6067.css",
+    "static/js/main.3bd789ab.js"
   ]
 }
