@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,10 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-    <Route exact path="/" element={<App/>}/>
+    <Route exact path="/Home" element={<App/>}/>
     <Route path="*" element={(
         <p style={{padding: "3rem"}}>
-          A página que você tentou acessar não existe!
+          A página que você tentou acessar não existe! <br/>
+          Talvez você esteja tentando ir para <Link to="/Home">Home</Link>
         </p>
       )}/>
     </Routes>
