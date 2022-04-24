@@ -18,6 +18,9 @@ function App() {
         .then((response)=>response.json())
           .then((response)=>{setInfo(response)})
     }
+    else{
+      setInfo({})
+    }
   }, [text])
 
 
@@ -30,10 +33,17 @@ function App() {
         {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}
         <InputSearch  value={text} onChange={(search)=> setText(search)}/>
 
+        {!text && (
+            <p className="warning-search">
+              Pesquise por seu anime favorito!
+            </p>
+          )}
+
         {/*Imprimindo mensagem de carregamento enquanto estiver sendo feita a leitura de dados na API*/}
         {text && !info.data && (
-          <span>Carregando...</span>
+          <span className="loading">Carregando...</span>
          )}
+         
 
         {/*listando dados correspondentes a pesquisa (caso exista algum valor sendo retornado pela API)*/}
         {info.data && (

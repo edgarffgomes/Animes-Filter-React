@@ -47,6 +47,13 @@ header h1 .icon{
 .App input:focus{
    background-color: rgba(255, 255, 255, 0.05);
 }
+.warning-search{
+  margin-top: 15px;
+  font-size: 3em;
+}
+.loading{
+  font-size: 2em;
+}
 .animes-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -56,4 +63,5 @@ header h1 .icon{
 .animes-list img{
   max-width: 100%;
 }
+
 
