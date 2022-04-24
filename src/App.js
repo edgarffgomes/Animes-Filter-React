@@ -19,6 +19,7 @@ function App() {
           .then((response)=>{setInfo(response)})
     }
     else{
+      //Esvaziando Info caso não haja nada em text
       setInfo({})
     }
   }, [text])
@@ -33,7 +34,9 @@ function App() {
         {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}
         <InputSearch  value={text} onChange={(search)=> setText(search)}/>
 
-        {!text && (
+
+        {/*Mensagem impressa caso o usuário não tenha feito nenhuma pesquisa*/}
+        {!text && !info.data && (
             <p className="warning-search">
               Pesquise por seu anime favorito!
             </p>
