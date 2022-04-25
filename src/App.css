@@ -100,9 +100,10 @@ header h1 .icon{
     font-size: 1.2em;
   }
 }
- /* Media Query para Small Devices */
-  @media only screen and (max-width: 767px) {
-    /*Formatando cabeçalho*/
+
+/* Media Query para Small Devices */
+@media only screen and (max-width: 767px) {
+  /*Formatando cabeçalho*/
   header{
     font-size: 1.2em;
   }
@@ -112,16 +113,40 @@ header h1 .icon{
   }
   /*Formatando mensagem inicial da aplicação*/
   .warning-search, .loading{
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 2.5em;
   }
   /*Formatando listagem dos animes*/
   .animes-list{
     grid-gap: 0.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     font-size: 1em;
   }
 }
+
+/* Media Query para Extra Small Devices */
+@media only screen and (max-width: 600px) {
+  /*Formatando cabeçalho*/
+  header{
+    font-size: 1em;
+  }
+  /*Formatando input*/
+.App input{
+    font-size: 1.5em;
+  }
+  /*Formatando mensagem inicial da aplicação*/
+  .warning-search, .loading{
+    margin-top: 5px;
+    font-size: 2em;
+  }
+  /*Formatando listagem dos animes*/
+  .animes-list{
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    font-size: 0.8em;
+  }
+}
+
 
 
 
