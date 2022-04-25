@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1><BiSearchAlt className="icon" size={55}/> Search animes</h1>
+        <h1><BiSearchAlt className="icon"/> Search animes</h1>
       </header>
 
         {/*Chamando componente que irá setar o text com o valor imposto pelo usuário*/}

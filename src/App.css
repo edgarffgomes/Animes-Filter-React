@@ -31,7 +31,7 @@ header{
 header h1{
   margin: auto 0px;
 }
-/*Formatando ícone do*/
+/*Formatando ícone do cabeaçalho*/
 header h1 .icon{
   bottom: 15px;
 }
@@ -61,7 +61,7 @@ header h1 .icon{
   font-size: 4em;
 }
 
-/*Formatando mensagem inicial da aplicação*/
+/*Formatando listagem dos animes*/
 .animes-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -69,30 +69,57 @@ header h1 .icon{
   grid-gap: 1.5rem;
   font-size: 1.5em;
 }
-/*Formatando mensagem inicial da aplicação*/
+/*Formatando pôsteres dos animes listados*/
 .animes-list img{
   max-width: 100%;
 }
 
-/*Media Queries para tablets*/
+/*Media Query para Medium Devices*/
 @media only screen and (max-width: 991px) {
   /*Formatando cabeçalho*/
   header{
     font-size: 1.6em;
   }
+  /*Formatando ícone do cabaeçalho*/
+  header h1 .icon{
+    display: none;
+  }
   /*Formatando input*/
-.App input{
-    font-size: 3em;
+  .App input{
+      font-size: 3em;
   }
   /*Formatando mensagem inicial da aplicação*/
   .warning-search, .loading{
     margin-top: 10px;
     font-size: 3.5em;
   }
+  /*Formatando listagem dos animes*/
   .animes-list{
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     font-size: 1.2em;
+  }
+}
+ /* Media Query para Small Devices */
+  @media only screen and (max-width: 767px) {
+    /*Formatando cabeçalho*/
+  header{
+    font-size: 1.2em;
+  }
+  /*Formatando input*/
+.App input{
+    font-size: 2em;
+  }
+  /*Formatando mensagem inicial da aplicação*/
+  .warning-search, .loading{
+    margin-top: 10px;
+    font-size: 2.5em;
+  }
+  /*Formatando listagem dos animes*/
+  .animes-list{
+    grid-gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 1em;
   }
 }
 
