@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Animes-Filter-React/static/css/main.4f7016d5.css",
+    "main.css": "/Animes-Filter-React/static/css/main.aeced06c.css",
     "main.js": "/Animes-Filter-React/static/js/main.5f14b101.js",
     "index.html": "/Animes-Filter-React/index.html",
-    "main.4f7016d5.css.map": "/Animes-Filter-React/static/css/main.4f7016d5.css.map",
+    "main.aeced06c.css.map": "/Animes-Filter-React/static/css/main.aeced06c.css.map",
     "main.5f14b101.js.map": "/Animes-Filter-React/static/js/main.5f14b101.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f7016d5.css",
+    "static/css/main.aeced06c.css",
     "static/js/main.5f14b101.js"
   ]
 }
