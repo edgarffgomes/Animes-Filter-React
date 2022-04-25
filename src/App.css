@@ -54,27 +54,48 @@ header h1 .icon{
 .App input:focus{
    background-color: rgba(255, 255, 255, 0.05);
 }
-/*Formatando mensagem inicial da aplicação*/
-.warning-search{
+/*Formatando mensagem inicial e mensagem de carregamento da aplicação*/
+.warning-search, .loading{
+  font-weight: bold;
   margin-top: 15px;
-  font-size: 3em;
+  font-size: 4em;
 }
-/*Formatando mensagem de carregamento da aplicação*/
-.loading{
-  font-size: 2em;
-}
+
 /*Formatando mensagem inicial da aplicação*/
 .animes-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   list-style: none;
   grid-gap: 1.5rem;
+  font-size: 1.5em;
 }
 /*Formatando mensagem inicial da aplicação*/
 .animes-list img{
   max-width: 100%;
 }
-@media only screen and (min-width: 768px) {...}
+
+/*Media Queries para tablets*/
+@media only screen and (max-width: 991px) {
+  /*Formatando cabeçalho*/
+  header{
+    font-size: 1.6em;
+  }
+  /*Formatando input*/
+.App input{
+    font-size: 3em;
+  }
+  /*Formatando mensagem inicial da aplicação*/
+  .warning-search, .loading{
+    margin-top: 10px;
+    font-size: 3.5em;
+  }
+  .animes-list{
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 1.2em;
+  }
+}
+
 
 
 
