@@ -1,17 +1,21 @@
+/*Resetando formatação padrão do browser*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+/*Formatando body*/
 body{
   background-color: #1e1e1e;
   color:  #FFF;
 }
+/*Formatando classe App*/
 .App {
   text-align: center;
   
 }
+/*Formatando cabeçalho*/
 header{
   display: flex;
   height: 100px;
@@ -23,13 +27,15 @@ header{
   justify-content: center;
 
 }
+/*Formatando headline do cabeçalho*/
 header h1{
   margin: auto 0px;
 }
+/*Formatando ícone do*/
 header h1 .icon{
   bottom: 15px;
 }
-
+/*Formatando input*/
 .App input{
   margin:  8px 0px;
   color: #FFF;
@@ -44,24 +50,31 @@ header h1 .icon{
   outline: none;
   transition: background-color ease-in 0.5s;
 }
+/*Formatando input quando estiver em foco*/
 .App input:focus{
    background-color: rgba(255, 255, 255, 0.05);
 }
+/*Formatando mensagem inicial da aplicação*/
 .warning-search{
   margin-top: 15px;
   font-size: 3em;
 }
+/*Formatando mensagem de carregamento da aplicação*/
 .loading{
   font-size: 2em;
 }
+/*Formatando mensagem inicial da aplicação*/
 .animes-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   list-style: none;
   grid-gap: 1.5rem;
 }
+/*Formatando mensagem inicial da aplicação*/
 .animes-list img{
   max-width: 100%;
 }
+@media only screen and (min-width: 768px) {...}
+
 
 
