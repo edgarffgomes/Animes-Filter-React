@@ -97,7 +97,7 @@ header h1 .icon{
   .animes-list{
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -118,6 +118,7 @@ header h1 .icon{
   }
   /*Formatando listagem dos animes*/
   .animes-list{
+    grid-column-gap: 2rem;
     grid-gap: 0.8rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     font-size: 1em;
@@ -141,9 +142,10 @@ header h1 .icon{
   }
   /*Formatando listagem dos animes*/
   .animes-list{
+    grid-column-gap: 0.5rem;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 }
 
