@@ -19,6 +19,7 @@
     <td> Javascript </td>
     <td> React.js </td>
     <td> React Components </td>
+    <td> REST API </td>
   </tr>
 </table>
 
