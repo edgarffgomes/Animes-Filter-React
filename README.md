@@ -1,4 +1,5 @@
-# Anime Filter React
+![Captura de tela 2022-05-09 110926](https://user-images.githubusercontent.com/57186828/167428779-59549e80-3f94-4764-9ffa-eb67b2a2cc5c.png)
+
 > Status: Completo ✅
 > 
 ### Uma Single Page Aplication que lista animes a partir de uma busca feita pelo usuário.
